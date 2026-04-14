@@ -1,0 +1,25 @@
+{
+  "name": "clubhouse-clone",
+  "version": "1.0.0",
+  "description": "A Clubhouse clone built with React, Express, and Stream.io",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd server && npm run build && cd ../client && npm run build"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "stream.io",
+    "clubhouse",
+    "audio",
+    "chat"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
